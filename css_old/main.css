@@ -1,0 +1,618 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../font/ubuntu-r-webfont.ttf");
+  src: local("☺"),
+    url("../font/ubuntu-r-webfont.woff") format("woff"),
+    url("../font/ubuntu-r-webfont.otf") format("opentype"),
+    url("../font/ubuntu-r-webfont.svg") format("svg");
+  }
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   HOME
+   ========================================================================== */
+.opcionesSuperiores{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.contenedorTitulares{
+    margin: 100px 0 auto;
+}
+
+.titularHomel1{
+    font-family: 'Oswald', sans-serif;
+    font-size:58px;
+    color: white;
+    text-shadow:-2px 2px 0 #000000;
+}
+
+.titularHomel2{
+    font-family: 'Oswald', sans-serif;
+    font-size:30px;
+    color: white;
+    text-shadow:-2px 2px 0 #000000;
+}
+
+.titularHomel3{
+    margin-top: 10px;
+    font-family: 'Ubuntu';
+    font-size:17px;
+    color: white;
+    text-shadow:-2px 2px 0 #000000;
+}
+
+.adorno1Home{
+    margin-bottom: 10px;
+}
+
+.adorno2Home{
+    margin-top: 15px;
+}
+
+.contenedorTitularDes{
+    display:table;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+.destacadoHome{
+    display: table-cell;
+    padding: 5px;
+     border-style:solid;
+    border-width:1px;
+    border-color: white;
+}
+.adornoDestacado{
+    display: table-cell;
+    text-align: center;
+    width: 24px;
+}
+.titularDestacado{
+    display: table-cell;
+    font-family: 'Oswald', sans-serif;
+    font-size:15px;
+    color: white;
+   /* text-shadow:-1px 1px 0 #000000;*/
+   padding: 0 5px 0 5px;
+}
+.textoDestacadoDe{
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+
+.contenedorDestacados{
+    display: table;
+    margin-top: 50px;
+    margin: 40px auto;
+    padding: 0 40px 0 40px;
+}
+
+.centrado{
+    text-align: center;
+}
+.contenedorGeneral{
+    width: 960px;
+/*    background-color: red;*/
+    margin:0 auto;
+}
+
+.contenedorIzquierda{
+    width: 275px;
+/*    background-color: white;*/
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.contenedorDerecha{
+    width: 685px;
+    height: 300px;
+/*    background-color: green;*/
+    margin-left: 275px;
+    z-index: -10000;
+    text-align: center;
+}
+
+
+.contenedorCartera{
+    background-image: url('../img/carteraFondo.png');
+    height: 360px;
+    background-position: top;
+    background-repeat: no-repeat;   
+}
+
+.contenidoCartera{
+    padding-top:85px;
+    width: 100%;
+    margin-left: 16px;
+
+}
+
+.ticket{
+    width: 193px;
+    margin-left:40px;
+    margin-bottom: -40px;
+    position: absolute;
+    bottom:333px;
+}
+
+.ticketAbajo{
+    width: 193px;
+    background-image: url('../img/ticketFondo.png');
+    background-repeat: repeat-y;
+    /*background-position: top;*/
+}
+
+.ticketAbajo p{
+    margin: 0;
+    padding: 0;
+}
+
+.ticketLogo{
+    text-align: center;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.ticketTxt{
+    text-align: center;
+    display: none;
+    
+}
+
+.ticketArriba{
+    width: 193px;
+    height: 17px;
+    background-image: url('../img/ticketArriba.png');
+}
+.separadorTicket{
+    height: 2px;
+    background-image: url('../img/separadorTicket.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+.itemCarteraHome{
+width: 241px;
+height: 60px;
+padding-top: 8px;
+/*background-image: url('../img/fondoMenu.png');*/
+background-repeat: no-repeat;
+cursor: pointer;
+
+}
+
+.iconoHome{
+    width: 44px;
+    height: 60px;
+    float: left;
+    padding-left: 45px;
+}
+
+.flechaHome{
+    height: 60px;
+    float: left;
+    padding-left: 8px;
+    padding-top: 7px;
+}
+
+.iconoDestacado{
+    margin-bottom: 5px;
+}
+.textoHome{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #391F00;
+    width: 74px;
+    height: 60px;
+    float: left;
+    padding-left: 8px;
+
+}
+
+.separadorHome{
+    height: 2px;
+    background-image: url('../img/separadorHome.png');
+    background-repeat: no-repeat;
+    margin-left: 35px;
+
+}
+
+.papel{
+    width: 224px;
+    height: 340px;
+    position: absolute;
+    z-index: -1000;
+    bottom: -10px;
+    background-color: white;
+    -webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+        -webkit-box-shadow: 5px 0px 9px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    5px 0px 9px rgba(50, 50, 50, 0.75);
+box-shadow:         5px 0px 9px rgba(50, 50, 50, 0.75);
+background-image: url('../img/texturaPapel.jpg');
+background-repeat: repeat;
+}
+
+.papelIdioma{
+left: 35px;
+}
+
+.papelPais{
+left: 40px;
+}
+
+.papelCiudad{
+left: 45px;
+}
+
+
+.cierrapapel{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.cierrapapel:hover{
+  color: #8C2300;
+}
+
+.listaPapel{
+    margin-top: 30px;
+    font-size: 15px;
+    color: #A09485;
+    text-align: center;
+    overflow-y: scroll;
+    height: 300px;
+    margin-right: 12px;
+}
+
+.listaPapel ul>li:hover{
+    color:black;
+    cursor: pointer;
+}
+
+.listaPapel::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.listaPapel::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+    -webkit-border-radius: 8px;
+}
+
+.listaPapel::-webkit-scrollbar-thumb:vertical {
+    height: 8px;
+    background-color: #666;
+    -webkit-border-radius: 8px;
+}
+
+.listaPapel::-webkit-scrollbar-thumb:vertical:hover {
+    height: 8px;
+    background-color: #C87A00;
+    -webkit-border-radius: 8px;
+}
+
+.listaPapel::-webkit-scrollbar-thumb:horizontal {
+    width: 8px;
+    background-color: #666;
+    -webkit-border-radius: 8px;
+}
+
+.fondoPapel{
+    position: absolute;
+    z-index: -1;
+
+}
+
+.ticketTitular{
+    font-family: 'Vollkorn', serif; 
+    color: #AAAAAA;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.ticketSeleccion{
+    font-family: 'Vollkorn', serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

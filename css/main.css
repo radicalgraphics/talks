@@ -1,0 +1,1829 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+
+}
+
+html{
+
+}
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+a:link {text-decoration: none; color:#34684E;}
+a:visited {text-decoration: none; color:#34684E;}
+a:hover {text-decoration: none; color:#34684E;}
+a:active {text-decoration: none; color:#34684E;}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../font/ubuntu-r-webfont.ttf");
+  src: local("☺"),
+    url("../font/ubuntu-r-webfont.woff") format("woff"),
+    url("../font/ubuntu-r-webfont.otf") format("opentype"),
+    url("../font/ubuntu-r-webfont.svg") format("svg");
+  }
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+.ink-label{
+   padding: 5px 5px;
+  background-color: #ff9c00;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 11px;
+}
+.btn-large{
+   font-size: 18px;
+   font-weight: 200;
+}
+
+.btn{
+   font-family: 'Oswald', sans-serif; 
+
+}
+.btn-danger{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.btnpeque{
+    height: 30px;
+    line-height: 30px;
+}
+span.warning {
+  padding: 10px 15px;
+  background-color: #ff9c00;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.navbar{
+    background-color: white;
+    font-size: 15px;
+    opacity: 0.4;
+}
+/* ==========================================================================
+   HOME
+   ========================================================================== */
+.opcionesSuperiores{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contenedorTitulares{
+    margin: 100px 0 auto;
+    text-align: center;
+}
+
+.titularHomel1{
+    font-family: 'Oswald', sans-serif;
+    font-size:58px;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+}
+
+.titularHomel2{
+    font-family: 'Oswald', sans-serif;
+    font-size:30px;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+}
+
+.titularHomel3{
+    margin-top: 10px;
+    font-family: 'Ubuntu';
+    font-size:17px;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+}
+
+.adorno1Home{
+    margin-bottom: 10px;
+}
+
+.adorno2Home{
+    margin-top: 15px;
+}
+
+.contenedorTitularDes{
+    display:table;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+.destacadoHome{
+    display: inline-block;
+    padding: 5px;
+    width: 185px;
+  /*   border-style:solid;
+    border-width:1px;
+    border-color: white;*/
+    /*background-color: #EDEDED;*/
+}
+
+.destacadoHome i{
+    color: white;
+}
+.adornoDestacado{
+    display: table-cell;
+    text-align: center;
+    width: 24px;
+
+}
+.titularDestacado{
+    display: table-cell;
+    font-family: 'Oswald', sans-serif;
+    font-size:15px;
+    color: white;
+   /* text-shadow:-1px 1px 0 #000000;*/
+   padding: 0 5px 0 5px;
+}
+.textoDestacadoDe{
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+
+}
+
+.contenedorDestacados{
+    margin-top: 50px;
+    margin: 40px auto;
+    padding: 0 40px 0 40px;
+}
+
+.centrado{
+    text-align: center;
+}
+.contenedorGeneral{
+    width: 960px;
+/*    background-color: red;*/
+    margin:0 auto;
+}
+
+.contenedorIzquierda{
+    width: 275px;
+/*    background-color: white;*/
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.contenedorDerecha{
+    width: 685px;
+    margin-left: 300px;
+    z-index: -10000;
+}
+
+
+.contenedorCartera{
+    background-image: url('../img/carteraFondo.png');
+    height: 360px;
+    background-position: top;
+    background-repeat: no-repeat;   
+}
+
+.contenidoCartera{
+    padding-top:85px;
+    width: 100%;
+    margin-left: 16px;
+
+}
+
+.ticket{
+    width: 193px;
+    margin-left:40px;
+    margin-bottom: -40px;
+    position: absolute;
+    bottom:333px;
+}
+
+.ticketAbajo{
+    width: 193px;
+    background-image: url('../img/ticketFondo.png');
+    background-repeat: repeat-y;
+    /*background-position: top;*/
+}
+
+.ticketAbajo p{
+    margin: 0;
+    padding: 0;
+}
+
+.ticketLogo{
+    text-align: center;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.ticketTxt{
+    text-align: center;
+    display: none;
+    
+}
+.ticketTxt2{
+    text-align: center;
+    
+    
+}
+
+.ticketArriba{
+    width: 193px;
+    height: 17px;
+    background-image: url('../img/ticketArriba.png');
+}
+.separadorTicket{
+    height: 2px;
+    background-image: url('../img/separadorTicket.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+.itemCarteraHome{
+width: 241px;
+height: 60px;
+padding-top: 8px;
+/*background-image: url('../img/fondoMenu.png');*/
+background-repeat: no-repeat;
+cursor: pointer;
+
+}
+
+.iconoHome{
+    width: 44px;
+    height: 60px;
+    float: left;
+    padding-left: 45px;
+}
+
+.flechaHome{
+    height: 60px;
+    float: left;
+    padding-left: 8px;
+    padding-top: 7px;
+}
+
+.iconoDestacado{
+    margin-bottom: 5px;
+}
+.textoHome{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #391F00;
+    width: 74px;
+    height: 60px;
+    float: left;
+    padding-left: 8px;
+
+}
+
+.separadorHome{
+    height: 2px;
+    background-image: url('../img/separadorHome.png');
+    background-repeat: no-repeat;
+    margin-left: 35px;
+
+}
+
+.papel{
+    width: 224px;
+    height: 340px;
+    position: absolute;
+    z-index: -1000;
+    bottom: -10px;
+    background-color: white;
+    -webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+        -webkit-box-shadow: 5px 0px 9px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    5px 0px 9px rgba(50, 50, 50, 0.75);
+box-shadow:         5px 0px 9px rgba(50, 50, 50, 0.75);
+background-image: url('../img/texturaPapel.jpg');
+background-repeat: repeat;
+}
+
+.papelIdioma{
+left: 35px;
+}
+
+.papelPais{
+left: 40px;
+}
+
+.papelCiudad{
+left: 45px;
+}
+
+.cargando{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.cierrapapel{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.cierrapapel:hover{
+  color: #8C2300;
+}
+
+.listaPapel{
+    margin-top: 30px;
+    font-size: 15px;
+    color: #A09485;
+    text-align: center;
+    overflow-y: scroll;
+    height: 300px;
+    margin-right: 12px;
+    text-transform:uppercase;
+}
+
+.listaPapel li{
+    list-style: none;
+}
+
+.listaPapel ul>li:hover{
+    color:black;
+    cursor: pointer;
+}
+
+.listaPapel::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.listaPapel::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+    -webkit-border-radius: 8px;
+}
+
+.listaPapel::-webkit-scrollbar-thumb:vertical {
+    height: 8px;
+    background-color: #666;
+    -webkit-border-radius: 8px;
+}
+
+.listaPapel::-webkit-scrollbar-thumb:vertical:hover {
+    height: 8px;
+    background-color: #C87A00;
+    -webkit-border-radius: 8px;
+}
+
+.listaPapel::-webkit-scrollbar-thumb:horizontal {
+    width: 8px;
+    background-color: #666;
+    -webkit-border-radius: 8px;
+}
+
+.fondoPapel{
+    position: absolute;
+    z-index: -1;
+
+}
+
+.ticketTitular{
+    font-family: 'Vollkorn', serif; 
+    color: #AAAAAA;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.ticketSeleccion{
+    font-family: 'Vollkorn', serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   SCHOOLS
+   ========================================================================== */
+
+.contenedorCabecera{
+    margin-top: 100px;
+    width: 685px;
+    height: 118px;
+    clear: both;
+    float: none;
+    display: table;
+}
+
+.contadorEscuelas{
+     font-family: 'Oswald', sans-serif;
+    font-size:40px;
+    color: white;
+    text-shadow:-2px 2px 0 #000000;
+    text-align: left;
+    width: 50%;
+    display: inline-block;
+    height: 115px;
+}
+
+.ordenEscuelas{
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    text-align: right;
+    color: black;
+    display: inline-block;
+    width: 50%;
+}
+
+.separaGrande{
+    height: 2px;
+    background-image: url('../img/separacionRepeat.png');
+    background-repeat: repeat-x;
+}
+
+.criterioOrden{
+    display: table-cell;
+}
+
+.ordenar{
+   display: table-cell;
+}
+
+.contenedorOrden{
+    text-align: right;
+    cursor: pointer;
+}
+
+.fichas{
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+.fichaEscuela{
+    width: 337px;
+    position: relative;
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+.fichaEscuelaLinea1{
+    height: 70px;
+    background-color: #EDEDED;
+}
+
+.nombreEscuela{
+    margin: 15px 0 0 15px;
+    display:inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    color: black;
+}
+
+.direccionEscuela{
+    font-size: 12px;
+    margin-left: 15px;
+    color: #3A2513;
+}
+
+.fichaEscuelaLinea2{
+    height: 50px;
+    background-color: #5FB588;
+}
+
+.fichaPuntuaciones{
+    width: 283px;
+    float: left;
+}
+
+.fichaMapa{
+display: inline-block;
+}
+.estrellasFicha{
+    float: left;
+    margin-left: 15px;
+    margin-top: 12px;
+    height: 100%;
+}
+
+.estrellaficha{
+    display: table-cell;
+    color:#FFDF55;
+}
+
+.fichaComentarios{
+    display: inline-block;
+    font-size: 13px;
+    color: white;
+  margin-top: 15px;
+  margin-left: 5px;
+    
+}
+
+.iconoMapa{
+    color:#34684E;
+    float: left;
+    text-align: center;
+    margin: 13px 0 0 20px;
+}
+
+.separaMapa{
+    height: 50px;
+    width: 1px;
+    background-color: #51A378;
+    float: left;
+}
+.fichaEscuelaLinea3{
+    overflow: hidden;
+    height: 161px;
+}
+.fichaEscuelaLinea3 img{
+    -webkit-filter: sepia(100%);
+    -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+    
+
+}
+.fichaEscuelaLinea3 img:hover{
+    -webkit-filter: sepia(5%);
+    -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+}
+.fichaEscuelaLinea4{
+    height: 50px;
+    background-color: #391F00;
+    cursor: pointer;
+}
+.fichaCurso{
+   float: left;
+    font-size: 12px;
+    color: white;
+    margin: 19px 0 0 20px;
+    height: 50px;
+
+}
+
+.fichaclases{
+    color:#E5A58A;
+}
+
+.contenedorFichaPrecio{
+    position: absolute;
+    right: 0;
+    min-width: 75px;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 19px;
+    color: #FFDF55;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #fe9800; /* Old browsers */
+    background: -moz-linear-gradient(top, #fe9800 0%, #d37e01 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe9800), color-stop(100%,#d37e01)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fe9800 0%,#d37e01 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fe9800 0%,#d37e01 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fe9800 0%,#d37e01 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #fe9800 0%,#d37e01 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe9800', endColorstr='#d37e01',GradientType=0 ); /* IE6-9 */
+}
+
+#rollPrecio{
+    display: none;
+}
+.itemCarteraFichas{
+margin-left: 20px;
+clear: both;
+padding-top: 12px;
+padding-left: 17px;
+}
+.itemCarteraFichasCurso{
+margin-left: 20px;
+clear: both;
+padding-top: 12px;
+padding-left: 17px;
+margin-bottom: 50px;
+}
+.itemCarteraFichas select{
+    margin-top: 5px;
+}
+.itemCarteraFichasCurso select{
+    margin-top: 5px;
+}
+.sliderFichasColumna{
+   float: left;
+}
+.sliderFichas{
+    width: 112px;
+}
+.contenedorSlider{
+     width: 150px;
+    height: auto;
+    position: relative;
+    margin-top: 8px;
+}
+.slider{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #333 #333 #777 #333;
+    border-radius: 25px;
+    width: 100px;
+    position: absolute;
+    height: 13px;
+    background-color: #8e8d8d;
+    background: url('../images/bg-track.png') repeat top left;
+    box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, .5), 
+                      0 1px 0 0px rgba(250, 250, 250, .5);
+    
+}
+.tooltip {
+    position: absolute;
+    display: block;
+    top: -16px;
+    font-size: 12px;
+    height: 20px;
+    left: 3px;
+    color: #fff;
+    text-align: center;
+}
+
+.etiquetaSlider{
+    font-size: 13px;
+    margin-left: 115px;
+}
+
+.slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background: url('../images/handle.png') no-repeat 50% 50%;
+    font-weight: bold;
+    color: #1C94C4;
+    outline: none;
+    top: -6px;
+    margin-left: -12px;
+    border: none;
+}
+.ui-slider-range {
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* IE10+ */
+    background: linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+    position: absolute;
+    border: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.iconoFichas{
+    width: 44px;
+    height: 60px;
+    float: left;
+    padding-left: 25px;
+}
+
+.separadorCarteraFichas{
+    height: 2px;
+    background-image: url('../img/separadorHome.png');
+    background-repeat: no-repeat;
+
+}
+
+.papelCurso{
+left: 45px;
+}
+
+.textoCarteraOpciones{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #391F00;
+}
+
+.textoCarteraOpcionesSliders{
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    color: #391F00;
+}
+
+#spinner{
+    width:20px;
+    height: 20px;
+    font-size: 15px;
+}
+
+.botonPeque{
+    height: 30px;
+    font-size: 12px;
+}
+
+
+.contenedorCarteraFichas{
+    background-image: url('../img/carteraFondo.png');
+    height: 420px;
+    background-position: top;
+    background-repeat: no-repeat;   
+}
+
+.contenedorCarteraCarrito{
+    background-image: url('../img/carteraFondo.png');
+    height: 320px;
+    background-position: top;
+    background-repeat: no-repeat;   
+}
+.ticketFichas{
+    width: 193px;
+    margin-left:40px;
+    margin-bottom: -40px;
+    position: absolute;
+    bottom:393px;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   COURSES
+   ========================================================================== */
+
+
+.contenedorPaginaCursos{
+    margin-top: 70px;
+}
+
+.paginaCursosFotos{
+    height: 327px;
+    overflow: hidden;
+}
+
+.paginaCursosLinea2{
+    background-color: #EDEDED;
+    height: 70px;
+}
+
+.nombreEscuelaCursos{
+    margin: 10px 0 0 25px;
+    display:inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    text-align: left;
+    color: black;
+}
+
+.direccionEscuelaCursos{
+    font-size: 12px;
+    margin-left: 25px;
+    color: #3B2513;
+}
+.escuelaCursos{
+    float: left;
+
+}
+.escuelaMenu{
+    float: right;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+.escuelaMenu li{
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    color: black;
+    display:inline-block;
+    margin: 5px;
+}
+.contenedorColumnaIzquierda{
+    width: 251px;
+    float: left;
+}
+.cargandoPaypal{
+    margin-top: 30%;
+    width: 100%;
+    text-align: center;
+}
+.contenedorColumnaDerecha{
+float: left;
+background-color: #EDEDED;
+width: 434px;
+-webkit-box-shadow: -5px 2px 6px rgba(50, 50, 50, 0.28);
+-moz-box-shadow:    -5px 2px 6px rgba(50, 50, 50, 0.28);
+box-shadow:         -5px 2px 6px rgba(50, 50, 50, 0.28);
+
+}
+.fichaPuntuacionesCurso{
+    width: 195px;
+    float: left;
+}
+.fichaMapa{
+display: inline-block;
+}
+.iconoMapaCursos{
+    color:#34684E;
+    float: left;
+    text-align: center;
+    margin: 13px 0 0 20px;
+}
+.separaMapaCursos{
+    height: 50px;
+    width: 1px;
+    background-color: #51A378;
+    float: left;
+}
+.descripcionEscuela{
+    background-color: #32694D;
+    color: #759B88;
+    padding: 20px;
+    font-size: 14px;
+    font-style: italic;
+    text-align: justify;
+
+}
+.cabeceraCurso{
+    background-color: #391F00;
+    height: 50px;
+    width: 434px;
+    cursor: pointer;
+    /*margin-bottom: 1px;*/
+    border-bottom:1px;
+    border-bottom-style: solid;
+    border-bottom-color:white;
+
+
+}
+.acordeonCursos ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+.acordeonCursos li{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+.fichaCursoCurso{
+    font-size: 14px;
+    color: white;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 15px;
+    position: absolute;
+   
+}
+.contenedorFichaPrecioCurso{
+    position: absolute;
+    margin-left: 349px;
+    min-width: 75px;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 19px;
+    color: #FFDF55;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #fe9800; /* Old browsers */
+    background: -moz-linear-gradient(top, #fe9800 0%, #d37e01 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe9800), color-stop(100%,#d37e01)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fe9800 0%,#d37e01 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fe9800 0%,#d37e01 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fe9800 0%,#d37e01 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #fe9800 0%,#d37e01 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe9800', endColorstr='#d37e01',GradientType=0 ); /* IE6-9 */
+}
+.contenedorCCurso{
+padding:20px;
+display: none;
+}
+.bloqueL1{
+    display:inline-block;
+    margin-right: 10px;
+}
+
+.bloqueIcono{
+    float: left;
+    margin-top: 5px;
+}
+.bloqueTxtIconosCursos{
+    height: 30px;
+    float: left;
+     color: #C3C3C3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    padding-left: 5px;
+    margin-top: 7px;
+}
+
+.separadorCurso{
+    height: 1px;
+    background-color: #9c9c9c;
+    width: 100%;
+    margin: 15px 0 15px 0;
+}
+.bloqueL2{
+    font-size: 14px;
+    font-style: italic;
+    color: #9c9c9c;
+}
+
+.bloqueL1 i{
+    margin-right: 15px;
+}
+
+.campoCurso{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    padding: 7px;
+}
+
+.bloqueL3{
+
+}
+.tituloCampo{
+    color:#808080;
+    line-height: 0.6em;
+}
+
+.valorCampo{
+    color:#bababa;
+    font-weight: 100;
+}
+
+.separadorCampos{
+    height: 3px;
+}
+
+.escuelaMenu li{
+    cursor: pointer;
+}
+
+.seccionOpiniones{
+    display: none;
+}
+.seccionAlojamientos{
+    display:none;
+}
+.contenedorOpiniones{
+    padding: 5px 20px 20px 20px;
+}
+.opinion{
+    margin-top: 15px;
+}
+.opinionL1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.tituloPuntuacion{
+    font-size: 13px;
+    color:#B2B2B2;
+}
+.tituloPuntuacion{
+    display: inline-block;
+}
+.contenedorValoracion{
+    display: inline-block;
+    vertical-align: -8px;
+}
+.columnaPuntos{
+    display: inline-block;
+    text-align: right;
+
+}
+.columnaPuntos2{
+    display: inline-block;
+    text-align: right;
+    margin-left: 10px;
+    
+}
+.fechaPuntuacion{
+    font-weight: 100;
+    color: #cbcbcb;
+}
+.descripcionOpinion{
+    font-size: 13px;
+    font-style: italic;
+    color: #9c9c9c;
+    margin-top: 5px;
+}
+.separadorOpiniones{
+    height: 1px;
+    background-color:#cbcbcb;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+.acordeonAloja ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+.acordeonAloja li{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+.cabeceraAloja{
+    background-color: #306A4C;
+    height: 50px;
+    width: 434px;
+    cursor: pointer;
+    /*margin-bottom: 1px;*/
+    border-bottom:1px;
+    border-bottom-style: solid;
+    border-bottom-color:white;
+
+
+}
+.fichaAlojaAloja{
+    font-size: 14px;
+    color: white;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 15px;
+    position: absolute;
+   
+}
+.fichadesayuno{
+    color:#80A392;
+}
+.contenedorFichaPrecioAloja{
+    position: absolute;
+    margin-left: 349px;
+    min-width: 75px;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 19px;
+    color: #FFDF55;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #fe9800; /* Old browsers */
+    background: -moz-linear-gradient(top, #fe9800 0%, #d37e01 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe9800), color-stop(100%,#d37e01)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fe9800 0%,#d37e01 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fe9800 0%,#d37e01 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fe9800 0%,#d37e01 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #fe9800 0%,#d37e01 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe9800', endColorstr='#d37e01',GradientType=0 ); /* IE6-9 */
+}
+.contenedorAAloja{
+padding:20px;
+display: none;
+}
+.alojaNombre{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.contenedorItemCarrito{
+
+    margin-left: 32px;
+    margin-right:36px;
+    padding: 5px;
+}
+
+.carritoConcepto{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    display: inline-block;
+    width: 70%;
+    font-weight: 100;
+}
+.carritoPrecio{
+    color: #FFDF52;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    text-align: right;
+    display: inline-block;
+   
+
+
+}
+.contenedorItemCarritoF{
+
+       margin-left: 32px;
+    margin-right: 58px;
+    padding: 5px;
+}
+
+.carritoConceptoF{
+    color: #57B786;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+    font-weight: 100;
+}
+.carritoPrecioF{
+    color: #57B786;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    text-align: right;
+    display: inline-block;
+}
+.contenedorItemCarritoR{
+margin-top: 5px;
+        margin-left: 32px;
+    margin-right: 58px;
+    padding: 10px;
+        background: #fe9800; /* Old browsers */
+    background: -moz-linear-gradient(top, #fe9800 0%, #d37e01 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe9800), color-stop(100%,#d37e01)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fe9800 0%,#d37e01 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fe9800 0%,#d37e01 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fe9800 0%,#d37e01 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #fe9800 0%,#d37e01 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe9800', endColorstr='#d37e01',GradientType=0 ); /* IE6-9 */
+}
+
+.carritoConceptoR{
+    color: #FFDF54;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+    font-weight: 100;
+}
+.carritoPrecioR{
+    color: #FFDF54;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    text-align: right;
+    display: inline-block;
+
+}
+.contenedorItemCarritoQ{
+        margin-left: 32px;
+    margin-right: 58px;
+    padding: 5px 10px 5px 10px;
+    background-color: #391F00;
+}
+.carritoConceptoQ{
+    color: #CD7940;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+    font-weight: 100;
+}
+.carritoPrecioQ{
+    color: #CD7940;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    text-align: right;
+    display: inline-block;
+
+}
+.sliderSemanas{
+    width: 80px;
+}
+
+.margenColumnaSlider{
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+.margenEtiquetaSlider{
+    margin-left: 90px;
+}
+.eliminarConcepto{
+    display: inline-block;
+    color: #CB0000;
+    cursor: pointer;
+}
+.desplegar{
+    width: 36px;
+    height: 17px;
+    position: absolute;
+    margin-top: -17px;
+    background-image: url('../img/fondo_despliega.png');
+    background-repeat: no-repeat;
+    margin-left: 340px;
+    text-align: center;
+    cursor: pointer;
+}
+.paginaCursosFotos img{
+    -webkit-filter: sepia(100%);
+    -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+}
+.paginaCursosFotos img:hover{
+    -webkit-filter: sepia(5%);
+    -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+}
+
+.NuevoContenedorLinea{
+    width: 233px;
+    height: 50px;
+    background-color: #342008;
+    margin-left: 3px;
+    margin-top: 1px;
+}
+.NuevoContenedorLinea2{
+    width: 233px;
+    height: 50px;
+    background-color: #342008;
+    margin-left: 3px;
+    margin-top: 1px;
+}
+
+.NuevoContenedorLinea3{
+    width: 233px;
+    height: 50px;
+    background-color: #DC8300;
+    margin-left: 3px;
+    margin-top: 1px;
+    padding-top: 5px;
+}
+
+.NuevoContenedorBoton{
+    width: 233px;
+    margin-left: 3px;
+    margin-top: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+.NuevoPapelera{
+    width: 33px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    color: #734609;
+    display: inline-block;
+}
+.NuevoPapelera{
+    width: 33px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    color: #734609;
+    display: inline-block;
+}
+.NuevoContenedorDerecha{
+    display: inline-block;
+    vertical-align: middle;
+}
+.NuevoDerechaArriba{
+    color: #DF7D19;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+}
+.NuevoDerechaArriba2{
+    color: #5BB687;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+}
+.NuevoDerechaAbajo{
+    color: #DF7D19;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    display: inline-block;
+    color: #734609;
+    width: 145px;
+}
+.NuevoDerechaPrecio{
+    color: #DF7D19;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    color: white;
+    text-align: right;
+}
+.NuevoL3Arriba{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: right;
+    margin-right: 18px;
+}
+.NuevoL3Abajo{
+    color: #FFDF46;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    margin-right: 18px;
+    text-align: right;
+}
+
+.NuevoContendedorDerechaAbajo{
+
+}
+/* ==========================================================================
+   CARRITO
+   ========================================================================== */
+.contenedorCarrito{
+    width: 100%;
+    margin-top: 170px;
+}
+
+.carritoSuperior{
+    width: 100%;
+}
+.carritoInferior{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+.carritoCuerpo{
+    width: 100%;
+    background-image: url('../img/carritoFondo.jpg');
+    background-repeat: repeat;
+    padding-top: 20px;
+}
+.carritoLogo{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.elLogo{
+display: inline-block;
+margin-left: 57px;
+}
+.elSello{
+    display: inline-block;
+    text-align: right;
+    width: 480px;
+    background-image: url('../img/matasellos.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 79px;
+    font-family: 'Oswald', sans-serif;
+    font-size:50px;
+    font-weight: 100;
+    color: #848484;
+
+}
+.carritoLinea{
+    border-bottom: 1px solid;
+    border-color: #DDDDDD;
+    width: 555px;
+    margin-left: 57px;
+    margin-bottom: 20px;
+
+}
+.carritoLineaTotal{
+    width: 555px;
+    margin-left: 57px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+    font-size:18px;
+    color: #AAAAAA;
+    font-weight: 400;
+
+}
+.carritoConceptoTitulo{
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #444444;
+}
+.carritoConceptoDetalleContenedor{
+display: table-cell;
+vertical-align: middle;
+width: 555px;
+}
+.carritoConceptoDetalle{
+    font-family: 'Oswald', sans-serif;
+    font-size:15px;
+    font-weight: 200;
+    color: #AAAAAA;
+    vertical-align: middle;
+    float: left;
+}
+.carritoConceptoPrecio{
+    vertical-align: middle;
+    float: right;
+    font-family: 'Oswald', sans-serif;
+    font-size:18px;
+    color: #AAAAAA;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.negroTotal{
+    color: #444444;
+}
+.datosUsuario{
+    width: 555px;
+    margin-left: 57px;
+    margin-bottom: 20px;
+}
+.datosUsuarioC1{
+    width: 270px;
+    display: inline-block;
+}
+.datosUsuarioC2{
+    width: 270px;
+   
+    display: inline-block;
+}
+.control label{
+    font-family: 'Oswald', sans-serif;
+    font-size:16px;
+    color: #AAAAAA;
+}
+.compra{
+    font-family: 'Oswald', sans-serif;
+    font-size:18px;
+    color: white;
+    text-align: center;
+     width: 555px;
+    margin-left: 57px;
+    
+}
+.errorCompra{
+    width: 555px;
+    margin-left: 57px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.sombraCarrito{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.botonCompra{
+    width: 447px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.restoCompra{
+    font-size:12px;
+    color: #AAAAAA;
+    text-align: center;
+    margin-top: 5px;
+}
+.precioDestacado{
+    font-weight: 700;
+}
+.completa{
+    width: 180px;
+     font-family: 'Oswald', sans-serif;
+    font-size:18px;
+    color: #391F00;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.condicionesCarrito{
+    margin-bottom: 17px;
+}
+.condicionesCarrito label{
+    color: #848484;
+    font-size: 15px;
+}
+
+/* ==========================================================================
+   CARRITO OK
+   ========================================================================== */
+
+.aceptado{
+    position:absolute;
+    margin-left: 550px;
+    margin-top: 30px;
+}
+
+.contenedorOK{
+  width: 555px;
+    margin-left: 57px;
+    margin-bottom: 20px;
+}
+.okTitular{
+    text-align: center;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 30px;
+    color: #57B785;
+}
+.okSubtitular{
+    text-align: center;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 17px;
+    color: #AAAAAA;
+}
+.okFinal{
+    width: 555px;
+    margin-left: 57px;
+    text-align: center;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

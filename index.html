@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate-custom.css">
+        <!--[if IE]>
+            <link rel="stylesheet" href="css/ink-ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <![endif]-->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+
+
+        <!-- Add your site or application content here -->
+        <div class="opcionesSuperiores">
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="navbar-inner">
+    <ul class="nav pull-right">
+      <li><a href="#">Sobre nosotros</a></li>
+      <li><a href="#">¿Eres una escuela?</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li class="dropdown">
+    <a class="dropdown-toggle"
+       data-toggle="dropdown"
+       href="#">
+        Idioma
+        <b class="caret"></b>
+      </a>
+    <ul class="dropdown-menu">
+      <li>aEnglish</li>
+      <li>Spanish</li>
+    </ul>
+  </li>
+    </ul>
+  </div>
+</div>
+        </div>
+        <div class="contenedorGeneral">
+            <div class="contenedorIzquierda">
+                <div class="papel papelCiudad">
+                <div class="fondoPapel">
+                    <img src="img/fondoPapelCiudad.png" height="160" width="224" alt="">
+                </div>
+                    <div class="cierrapapel"><i class="icon-remove-sign"></i></div>
+                    <div class="listaPapel" id="lista3">
+                       
+                     </div>
+                </div>
+                <div class="papel papelPais">
+                    <div class="fondoPapel">
+                    <img src="img/fondoPapelPais.png" height="160" width="224" alt="">
+                </div>
+                    <div class="cierrapapel"><i class="icon-remove-sign"></i></div>
+                     <div class="listaPapel" id="lista2">
+                      
+                     </div>
+                </div>
+                <div class="papel papelIdioma">
+                    <div class="fondoPapel">
+                    <img src="img/fondoPapelIdioma.png" height="160" width="224" alt="">
+                </div>
+                   <div class="cierrapapel"><i class="icon-remove-sign"></i></div>
+                   <div class="listaPapel" id="lista1">
+                       
+                   </div>
+                </div>
+                
+                
+                <div class="contenedorCartera">
+                    <div class="contenidoCartera">
+                        <div class="itemCarteraHome" >
+                            <div class="contenidoItem" id="menuIdioma">
+                                <div class="iconoHome">
+                                    <img src="img/iconoIdioma.png" height="44" width="44" alt="">
+                                </div>
+                                <div class="textoHome">
+                                    ESCOGE TU IDOMA
+                                </div>
+                                <div class="flechaHome">
+                                    <img src="img/iconoFlecha.png" height="23" width="17" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separadorHome"></div>
+                        <div class="itemCarteraHome ">
+                            <div class="contenidoItem" id="menuPais">
+                                <div class="iconoHome">
+                                    <img src="img/iconoPais.png" height="44" width="44" alt="">
+                                </div>
+                                <div class="textoHome">
+                                    ESCOGE TU PAIS
+                                </div>
+                                <div class="flechaHome">
+                                    <img src="img/iconoFlecha.png" height="23" width="17" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separadorHome"></div>
+                        <div class="itemCarteraHome">
+                            <div class="contenidoItem" id="menuCiudad">
+                                <div class="iconoHome">
+                                    <img src="img/iconoCiudad.png" height="44" width="44" alt="">
+                                </div>
+                                <div class="textoHome">
+                                    ESCOGE TU CIUDAD
+                                </div>
+                                <div class="flechaHome">
+                                    <img src="img/iconoFlecha.png" height="23" width="17" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemCarteraHome centrado">
+                            <form action="schools.php" method="post">
+                                <input type="hidden" id="IdiomaFinal" name="IdiomaFinal" value="">
+                                <input type="hidden" id="PaisFinal" name="PaisFinal" value="">
+                                <input type="hidden" id="CiudadFinal" name="CiudadFinal" value="">
+                             <button class="btn btn-large btn-warning" >ENCUENTRA TU CURSO</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticketArriba"></div>
+                    <div class="ticketAbajo ticketLogo">
+                        <img src="img/logoTicket.png" height="63" width="98" alt="">
+                    </div>
+                    <div class="ticketAbajo ticketTxt" id="ticketIdioma">
+                        <p class="ticketTitular">Voy a estudiar</p>
+                        <p class="ticketSeleccion">Inglés</p>
+                        <div class="separadorTicket"></div>
+                    </div>
+                    
+                    <div class="ticketAbajo ticketTxt" id="ticketPais">
+                        <p class="ticketTitular">En</p>
+                        <p class="ticketSeleccion">Inglaterra</p>
+                    <div class="separadorTicket"></div>
+                    </div>
+
+                    <div class="ticketAbajo ticketTxt" id="ticketCiudad">
+                        <p class="ticketTitular">En la ciudad de</p>
+                        <p class="ticketSeleccion">Londres</p>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="contenedorDerecha">
+                <div class="contenedorTitulares">
+                    <img src="img/titEsp.png" height="355" width="504" alt="">
+                </div>
+                <div class="contenedorDestacados">
+                  <div class="destacadoHome">
+                    <div class="iconoDestacado centrado">
+                      <i class="icon-star icon-3x"></i>
+                    </div>
+                    <div class="contenedorTitularDes centrado">
+                    <div class="adornoDestacado">
+                      <img src="img/adornoDesIz.png" height="11" width="24" alt="">
+                    </div>
+                    <div class="titularDestacado">
+                      LAS MEJORES ESCUELAS
+                    </div>
+                    <div class="adornoDestacado">
+                      <img src="img/adornoDesDe.png" height="11" width="24" alt="">
+                    </div>
+                    </div>
+                    <div class="textoDestacadoDe">
+                      Elige entre las mejores escuelas, con ofertas para cursos generales o especializados.<br>+21 idiomas para aprender<br>+200 academias<br>+100 ciudades en 40 países.
+                    </div>
+                  </div>
+                  <div class="destacadoHome">
+                    <div class="iconoDestacado centrado">
+                      <i class="icon-money icon-3x"></i>
+                    </div>
+                    <div class="contenedorTitularDes centrado">
+                    <div class="adornoDestacado">
+                      <img src="img/adornoDesIz.png" height="11" width="24" alt="">
+                    </div>
+                    <div class="titularDestacado">
+                     DISFRUTA DEL MEJOR PRECIO
+                    </div>
+                    <div class="adornoDestacado">
+                      <img src="img/adornoDesDe.png" height="11" width="24" alt="">
+                    </div>
+                    </div>
+                    <div class="textoDestacadoDe">
+                      Conseguimos los mejores descuentos para ti. Reservas directamente con la academia, sin comisiones extra, reserva ahora y paga el resto más tarde con la seguridad de PayPal
+                    </div>
+                  </div>
+                  <div class="destacadoHome">
+                    <div class="iconoDestacado centrado">
+                      <i class="icon-group icon-3x"></i>
+                    </div>
+                    <div class="contenedorTitularDes centrado">
+                    <div class="adornoDestacado">
+                      <img src="img/adornoDesIz.png" height="11" width="24" alt="">
+                    </div>
+                    <div class="titularDestacado">
+                      CENTRADOS EN TI
+                    </div>
+                    <div class="adornoDestacado">
+                      <img src="img/adornoDesDe.png" height="11" width="24" alt="">
+                    </div>
+                    </div>
+                    <div class="textoDestacadoDe">
+                      Tu viaje comienza cuando eliges tu destino. Te mostramos los mejores lugares para que sigas a tu instinto. Busca, elige, reserva y ¡disfruta de la experiencia más emocionante de tu vida!
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.3/TweenMax.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.3/jquery.gsap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/home.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        <script>
+        jQuery(document).ready(function($) {
+              $('#lista1').html('<div class="preloaderlista1"><img src="royalslider/skins/preloaders/preloader.gif" height="20" width="20" alt=""></div>');
+			//Idiomas
+			$.ajax({  
+				url: 'modulos/ajax/contenido.php?lista=1',  
+				success: function(data) {  
+					$('#lista1').html(data);  
+				}  
+			});  
+			
+		});
+        </script>
+    </body>
+</html>
